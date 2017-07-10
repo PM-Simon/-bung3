@@ -1,0 +1,10 @@
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/controllers/SmartMeterController.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/models/Messdaten.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/repos/SmartMeterRepository.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/controllers/HelloController.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/controllers/MessdatenController.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/models/User.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/repos/MessdatenRepository.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/Server.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/repos/UserRepository.java
+/Users/lenaweis/Downloads/REST Basisprojekte Eclipse/rest-sensors-base/src/main/java/de/tub/ise/anwsys/models/SmartMeter.java
