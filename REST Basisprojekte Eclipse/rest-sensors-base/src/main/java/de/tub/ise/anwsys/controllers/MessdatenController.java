@@ -3,10 +3,7 @@ package de.tub.ise.anwsys.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -24,6 +21,7 @@ public class MessdatenController {
 	@RequestMapping(method=RequestMethod.POST)
 	public Messdaten createProduct(@RequestBody Messdaten input) {
 		Messdaten m = new Messdaten(input.getTimestamp(), input.getMesswert());
+		m.setSm(input.getSm());
 		return repository.save(m);
 	}
 		
@@ -36,19 +34,5 @@ public class MessdatenController {
 	@RequestMapping(method=RequestMethod.GET, value="/{id}")
 	public Messdaten getSingleProduct(@PathVariable Long id) {
 		return repository.findOne(id);
-	}
-		
-	//PutMapping is an alias for the following:
-	//@RequestMapping(method=RequestMethod.PUT, value="/{id}")
-	@PutMapping("/{id}")
-	public Messdaten update(@PathVariable Long id, @RequestBody Messdaten input) {
-		Messdaten m = repository.findOne(id);
-		return repository.save(m);
-	}
-		
-	@DeleteMapping("/{id}")
-	public ResponseEntity<Void> delete(@PathVariable Long id) {
-		repository.delete(id);
-		return ResponseEntity.ok().build();
 	}
 }

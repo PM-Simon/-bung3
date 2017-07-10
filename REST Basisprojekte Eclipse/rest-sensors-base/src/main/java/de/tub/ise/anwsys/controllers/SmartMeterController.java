@@ -26,14 +26,14 @@ public class SmartMeterController {
 	//Path gets build with the initial RestController value and any value in the Mapping annotations
 	@RequestMapping(method=RequestMethod.GET, value="/{id}")
 	public SmartMeter getSingleProduct(@PathVariable Long id) {
-		return repository.findById(id).get();
+		return repository.findOne(id);
 	}
 			
 	//PutMapping is an alias for the following:
 	//@RequestMapping(method=RequestMethod.PUT, value="/{id}")
 	@PutMapping("/{id}")
 	public SmartMeter update(@PathVariable Long id, @RequestBody SmartMeter input) {
-		SmartMeter s = repository.findById(id).get();
+		SmartMeter s = repository.findOne(id);
 		return repository.save(s);
 	}
 }
